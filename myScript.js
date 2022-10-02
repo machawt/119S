@@ -42,10 +42,10 @@ function bk1(){ cnt=cnt-1;if (cnt<0){cnt=0};
 function hd() {if (re.style.visibility==="visible"){re.style.visibility="hidden";}
 else{re.style.visibility="visible";}}
 
-function engvis() {let beat = new Audio('s01.mp3');
+function engvis() {if (bt===1){bt=0;}
+else{bt=0;let beat = new Audio('s01.mp3');beat.play();}}
                    // Play the beat
-if (bt===1){beat.load();bt=0}
-else{bt=0;beat.play();}}
+                   
 
 // Pause/stop the beat
 //beat.pause();
