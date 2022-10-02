@@ -35,8 +35,8 @@ line1.appendChild(btn);}
 };
 
 
-function fd(){cnt=cnt+1;if (cnt>txt.length){cnt=cnt-1};
-update();tm=st(cnt);}
+function fd(){cnt=cnt+1;if (cnt>txt.length){cnt=cnt-1}
+tm=st[cnt];update();}
     
 function bk1(){ cnt=cnt-1;if (cnt<0){cnt=0};
     update(); }
