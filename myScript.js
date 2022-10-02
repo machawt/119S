@@ -42,11 +42,11 @@ function bk1(){ cnt=cnt-1;if (cnt<0){cnt=0};
 function hd() {if (re.style.visibility==="visible"){re.style.visibility="hidden";}
 else{re.style.visibility="visible";}}
 
-function engvis() {if (bt===1){bt=0;}
-else{bt=0;let beat = new Audio('s01.mp3');beat.play();}}
+function engvis() {let beat = new Audio('s01.mp3');let tm=0;beat.currentTime=tm;beat.play();}
                    // Play the beat
                    
-
+function stopsound() {beat.pause();}
+                   // stop the beat
 // Pause/stop the beat
 //beat.pause();
 // Reload the beat (back to the start)
