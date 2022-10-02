@@ -42,8 +42,16 @@ function bk1(){ cnt=cnt-1;if (cnt<0){cnt=0};
 function hd() {if (re.style.visibility==="visible"){re.style.visibility="hidden";}
 else{re.style.visibility="visible";}}
 
-function engvis() {if (engdiv.style.visibility==="visible"){engdiv.style.visibility="hidden";}
-else{engdiv.style.visibility="visible";}}
+function engvis() {let beat = new Audio('s01.mp3');
+                   // Play the beat
+beat.play();}
+
+// Pause/stop the beat
+//beat.pause();
+// Reload the beat (back to the start)
+//beat.load();
+//    if (engdiv.style.visibility==="visible"){engdiv.style.visibility="hidden";}
+//else{engdiv.style.visibility="visible";}}
 
 function clr(){let str=document.getElementById("echo");
 del= str.innerText.slice(0, -1);
