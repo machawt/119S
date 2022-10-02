@@ -44,7 +44,8 @@ else{re.style.visibility="visible";}}
 
 function engvis() {let beat = new Audio('s01.mp3');
                    // Play the beat
-beat.play();}
+if (bt===1){beat.load();bt=0}
+else{bt=0;beat.play();}}
 
 // Pause/stop the beat
 //beat.pause();
