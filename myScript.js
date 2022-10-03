@@ -44,7 +44,7 @@ function bk1(){ cnt=cnt-1;if (cnt<0){cnt=0};
 function hd() {if (re.style.visibility==="visible"){re.style.visibility="hidden";}
 else{re.style.visibility="visible";}}
 
-function engvis() {beat.currentTime=tm;beat.play();}
+function engvis() {tm=Number (st[cnt]);beat.currentTime=tm;beat.play();}
                    // Play the beat
                    
 function stopsound() {beat.pause();}
